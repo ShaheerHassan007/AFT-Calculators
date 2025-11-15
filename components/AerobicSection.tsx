@@ -15,7 +15,7 @@ interface AerobicSectionProps {
     setAltEventTime: (value: number) => void;
 }
 
-const TimeInput: React.FC<{ value: number; onChange: (value: number) => void }> = ({ value, onChange }) => {
+const TimeInput: React.FC<{ value: number, onChange: (value: number) }> = ({ value, onChange }) => {
     const minutes = Math.floor(value / 60);
     const seconds = value % 60;
 
